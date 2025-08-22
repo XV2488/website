@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SendSmart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold">SendSmart</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../#features" class="hover:text-gray-300 transition-colors duration-300">Features</a>
+                    <a href="index.html" class="text-gray-300">Privacy</a>
+                    <a href="../terms/" class="hover:text-gray-300 transition-colors duration-300">Terms</a>
+                    <a href="../#install" class="btn-primary">Install Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-black mb-4">Privacy Policy</h1>
+                <p class="text-xl text-gray-600">Last updated: January 2025</p>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-black mb-4">Introduction</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        SendSmart ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, access, and use information when you use our Chrome extension.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        By using SendSmart, you agree to the collection and use of information in accordance with this policy.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-black mb-4">Information Access and Gmail Integration</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        SendSmart requires access to your Gmail account to perform email operations. This access is granted through OAuth authentication and includes the following scopes:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-2">
+                        <li><code class="bg-gray-100 px-2 py-1 rounded">./auth/gmail.modify</code> - Allows SendSmart to modify your Gmail (send emails)</li>
+                        <li><code class="bg-gray-100 px-2 py-1 rounded">./auth/gmail.send</code> - Allows SendSmart to send emails on your behalf</li>
+                    </ul>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        These permissions are used solely for the purpose of sending emails as requested by you. SendSmart does not have access to read your existing emails or access other Gmail features.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>Account Information:</strong> During the OAuth process, SendSmart may receive basic account information including your Gmail email address and display name. This information is used solely for authentication and to personalize your experience within the extension.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-black mb-4">Data Usage and Storage</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Email Content:</strong> SendSmart sends emails directly through Gmail's API. We do not store, cache, or retain any email content, recipient addresses, or email metadata.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Account Information:</strong> Your Gmail email address and display name are received during OAuth authentication but are not stored on our servers. This information is used only for the duration of your session to authenticate and personalize your experience.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Personal Information:</strong> We do not collect or store personal information beyond what is necessary for the extension to function. Any account information received is temporary and not retained.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>Usage Analytics:</strong> Any website cookies or analytics are strictly for improving user experience and website functionality. No email data is tracked or analyzed.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-black mb-4">User Consent</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        By installing and using SendSmart, you explicitly consent to:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-2">
+                        <li>Granting SendSmart access to your Gmail account through OAuth</li>
+                        <li>Allowing SendSmart to process email actions on your behalf</li>
+                        <li>The collection and processing of information as described in this policy</li>
+                    </ul>
+                    <p class="text-gray-700 leading-relaxed">
+                        You can revoke this access at any time by removing SendSmart from your Chrome extensions or revoking access in your Google Account settings.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-black mb-4">Security Measures</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        SendSmart implements several security measures to protect your information:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-2">
+                        <li><strong>OAuth Authentication:</strong> Secure authentication through Google's OAuth 2.0 protocol</li>
+                        <li><strong>Encrypted Communication:</strong> All data transmission is encrypted using industry-standard protocols</li>
+                        <li><strong>No Data Storage:</strong> We do not store sensitive information on our servers</li>
+                        <li><strong>Regular Updates:</strong> We continuously update our security practices and extension</li>
+                    </ul>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-black mb-4">Third-Party Services</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        SendSmart integrates with the following third-party services:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-4 space-y-2">
+                        <li><strong>Gmail API:</strong> For email sending functionality</li>
+                        <li><strong>Google OAuth:</strong> For secure authentication</li>
+                    </ul>
+                    <p class="text-gray-700 leading-relaxed">
+                        These services have their own privacy policies, and we encourage you to review them.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-black mb-4">Children's Privacy</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        SendSmart is not intended for use by children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-black mb-4">Changes to This Privacy Policy</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. You are advised to review this Privacy Policy periodically for any changes.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-black mb-4">Contact Information</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        If you have any questions about this Privacy Policy or our data practices, please contact us:
+                    </p>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <p class="text-gray-700">
+                            <strong>Email:</strong> sendsmartcontact@gmail.com<br>
+                            <strong>Subject:</strong> Privacy Policy Inquiry
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center pt-8 border-t border-gray-200">
+                    <a href="../" class="inline-block bg-gradient-to-r from-purple-600 to-purple-800 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:from-purple-700 hover:to-purple-900 hover:scale-105 transform cursor-pointer border-2 border-purple-600 shadow-lg hover:shadow-xl">
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 px-4 mt-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400">© 2025 SendSmart. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
