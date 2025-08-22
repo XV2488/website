@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SendSmart - Send Emails Faster and Smarter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="font-inter">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-black text-white z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="icon128.png" alt="SendSmart Logo" class="w-10 h-10 mr-3">
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">SendSmart</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="hover:text-gray-300 transition-colors duration-300">Features</a>
+                    <a href="privacy/index.html" class="hover:text-gray-300 transition-colors duration-300">Privacy</a>
+                    <a href="terms/index.html" class="hover:text-gray-300 transition-colors duration-300">Terms</a>
+                    <a href="#install" class="bg-white text-black px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-gray-100 hover:scale-105 transform cursor-pointer border-2 border-black shadow-lg hover:shadow-xl">Install Soon</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white hover:text-gray-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-white flex items-center justify-center px-4 relative overflow-hidden" style="box-shadow: inset 0 0 150px rgba(147, 51, 234, 0.3), 0 0 50px rgba(147, 51, 234, 0.2);">
+
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold text-black mb-6">
+                SendSmart
+            </h1>
+            <h2 class="text-2xl md:text-4xl font-semibold text-black mb-8">
+                Send Emails Faster and Smarter
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Send mass emails, do mail merge, or schedule emails with your Gmail account, all for free.
+            </p>
+            <button onclick="installExtension()" class="inline-block bg-gradient-to-r from-purple-600 to-purple-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:from-purple-700 hover:to-purple-900 hover:scale-105 transform cursor-pointer border-2 border-purple-600 shadow-lg hover:shadow-xl">
+                Install SendSmart Soon
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- Features Section -->
+    <section id="features" class="bg-black text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Powerful Features</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Everything you need to streamline your email communication
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Mass Email -->
+                <div class="bg-white text-black p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform text-center" style="box-shadow: 0 0 50px rgba(147, 51, 234, 0.5), 0 0 100px rgba(147, 51, 234, 0.3), 0 10px 30px rgba(0, 0, 0, 0.1);">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mass Email</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Send emails to multiple recipients efficiently. Perfect for newsletters, announcements, and marketing campaigns.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Schedule Emails -->
+                <div class="bg-white text-black p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform text-center" style="box-shadow: 0 0 50px rgba(147, 51, 234, 0.5), 0 0 100px rgba(147, 51, 234, 0.3), 0 10px 30px rgba(0, 0, 0, 0.1);">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Schedule Emails</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Set a specific time and date for emails to be sent automatically. Never miss the perfect moment to send.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Individual Emails -->
+                <div class="bg-white text-black p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform text-center" style="box-shadow: 0 0 50px rgba(147, 51, 234, 0.5), 0 0 100px rgba(147, 51, 234, 0.3), 0 10px 30px rgba(0, 0, 0, 0.1);">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mail Merge</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Personalize each email with recipient name using mail merge. Make every message feel unique and tailored—perfect for outreach, invitations, and marketing campaigns.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features Section -->
+    <section class="bg-white py-20 px-4" style="box-shadow: inset 0 0 150px rgba(147, 51, 234, 0.3), 0 0 50px rgba(147, 51, 234, 0.2);">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-black mb-6">Why Choose SendSmart?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Built for professionals who value efficiency, security, and reliability
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Security -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">100% Secure</h3>
+                    <p class="text-gray-600 text-sm">
+                        OAuth 2.0 authentication with Gmail. No data stored on our servers.
+                    </p>
+                </div>
+
+                <!-- Speed -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Lightning Fast</h3>
+                    <p class="text-gray-600 text-sm">
+                        Send emails instantly with our optimized Gmail integration.
+                    </p>
+                </div>
+
+                <!-- Free -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">Completely Free</h3>
+                    <p class="text-gray-600 text-sm">
+                        No hidden fees, no subscriptions. Use all features at no cost.
+                    </p>
+                </div>
+
+                <!-- Support -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-black mb-3">24/7 Support</h3>
+                    <p class="text-gray-600 text-sm">
+                        Get help anytime at sendsmartcontact@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="bg-black text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">How It Works</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Get started with SendSmart in just three simple steps
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white text-black rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold">1</div>
+                    <h3 class="text-2xl font-bold mb-4">Install Extension</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Add SendSmart to Chrome from the Chrome Web Store when it launches
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white text-black rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold">2</div>
+                    <h3 class="text-2xl font-bold mb-4">Connect Gmail</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Authorize SendSmart to access your Gmail account securely via OAuth
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white text-black rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-bold">3</div>
+                    <h3 class="text-2xl font-bold mb-4">Start Sending</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Send individual emails, mass emails, or schedule them for later
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="install" class="bg-white py-20 px-4" style="box-shadow: inset 0 0 150px rgba(147, 51, 234, 0.3), 0 0 50px rgba(147, 51, 234, 0.2);">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-black mb-6">
+                Ready to Transform Your Email Experience?
+            </h2>
+            <p class="text-xl text-gray-700 mb-12 max-w-2xl mx-auto">
+                Join thousands of users who have already streamlined their email communication with SendSmart.
+            </p>
+            <button onclick="installExtension()" class="inline-block bg-gradient-to-r from-purple-600 to-purple-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:from-purple-700 hover:to-purple-900 hover:scale-105 transform cursor-pointer border-2 border-purple-600 shadow-lg hover:shadow-xl">
+                Install SendSmart Soon
+            </button>
+            <p class="text-sm text-gray-500 mt-4">
+                Free • Secure • Gmail Integrated
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-2">
+                        <img src="icon128.png" alt="SendSmart Logo" class="w-8 h-8 mr-3">
+                        <h3 class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-purple-300 bg-clip-text text-transparent">SendSmart</h3>
+                    </div>
+                    <p class="text-gray-400">Send emails faster and smarter</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="privacy/index.html" class="hover:text-gray-300 transition-colors duration-300">Privacy Policy</a>
+                    <a href="terms/index.html" class="hover:text-gray-300 transition-colors duration-300">Terms of Service</a>
+                    <a href="mailto:sendsmartcontact@gmail.com?subject=SendSmart%20Support" class="hover:text-gray-300 transition-colors duration-300">Support</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2025 SendSmart. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Install extension function
+        function installExtension() {
+            // Show coming soon message
+            alert('SendSmart is coming soon! We\'re working hard to bring you the best email extension. Stay tuned for updates!');
+        }
+
+
+    </script>
+</body>
+</html> 
