@@ -287,8 +287,21 @@
 
         // Install extension function
         function installExtension() {
-            // Show coming soon message
-            alert('SendIQ is coming soon! We\'re working hard to bring you the best email extension. Stay tuned for updates!');
+            // Open Chrome Web Store page for SendIQ extension
+            const extensionUrl = 'https://chromewebstore.google.com/detail/sendiq/ojjbihmonafbibaelbejfbaafflibnkm';
+            
+            // Check if user is on Chrome
+            const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            
+            if (isChrome) {
+                // Open the extension page in a new tab
+                window.open(extensionUrl, '_blank');
+            } else {
+                // Show message for non-Chrome browsers
+                alert('SendIQ is a Chrome extension. Please open this link in Google Chrome to install:\n\n' + extensionUrl);
+                // Still open the link for them to copy if needed
+                window.open(extensionUrl, '_blank');
+            }
         }
 
 
